@@ -32,8 +32,6 @@ jobs:
 
       - name: Build and push the image
         run: |
-         echo ${{ secrets.TOKEN_ACCESS }} | docker login ghcr.io -u tariqnb --password-stdin
-         docker build -t ghcr.io/tariqnb/primes-service:latest --file Dockerfile .
-         docker push ghcr.io/tariqnb/primes-service:latest
-        env:
-         JAVA_HOME: /opt/hostedtoolcache/Java_Adopt_jdk/17.0.10-7/x64
+  echo "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" | docker login --username tariqnb --password-stdin ghcr.io
+          docker build -t ghcr.io/tariqnb/primes-service:latest --file Dockerfile .
+          docker push ghcr.io/tariqnb/primes-service:latest
