@@ -30,8 +30,11 @@ jobs:
           reporter: java-junit
           fail-on-error: true
 
-      - name: Build and push the image
-        run: |
-          docker login --username tariqnb --password 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 ghcr.io
-          docker build -t ghcr.io/tariqnb/primes-service:latest --file Dockerfile .
-          docker push ghcr.io/tariqnb/primes-service:latest
+
+- name: Build and push the image
+  run: |
+    echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u tariqnb --password-stdin
+    docker build -t ghcr.io/tariqnb/primes-service:latest --file Dockerfile .
+    docker push ghcr.io/tariqnb/primes-service:latest
+  env:
+    JAVA_HOME: /opt/hostedtoolcache/Java_Adopt_jdk/17.0.10-7/x64
