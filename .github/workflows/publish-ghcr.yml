@@ -32,6 +32,6 @@ jobs:
 
       - name: Build and push the image
         run: |
-          echo "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" | docker login --username tariqnb --password-stdin ghcr.io
+          echo "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" | docker login --username tariqnb --password-stdin ghcr.io
           docker build -t ghcr.io/tariqnb/primes-service:latest --file Dockerfile .
           docker push ghcr.io/tariqnb/primes-service:latest
