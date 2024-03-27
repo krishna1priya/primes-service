@@ -1,4 +1,4 @@
-package edu.iu.tariqnb.primesservice;
+package edu.iu.krishna1priya.primesservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

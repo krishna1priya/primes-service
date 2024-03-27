@@ -1,4 +1,4 @@
-package edu.iu.tariqnb.primesservice.controller;
+package edu.iu.krishna1priya.primesservice.controller;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

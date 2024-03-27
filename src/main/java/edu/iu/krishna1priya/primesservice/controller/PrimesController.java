@@ -1,7 +1,8 @@
-package edu.iu.tariqnb.primesservice.controller;
+package edu.iu.krishna1priya.primesservice.controller;
 
-import edu.iu.tariqnb.primesservice.service.IPrimesService;
 import org.springframework.web.bind.annotation.*;
+
+import edu.iu.krishna1priya.primesservice.service.IPrimesService;
 
 @RestController
 @CrossOrigin

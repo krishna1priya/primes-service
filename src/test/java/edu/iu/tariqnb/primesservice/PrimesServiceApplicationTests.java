@@ -1,4 +1,4 @@
-package edu.iu.tariqnb.primesservice;
+package edu.iu.krishna1priya.primesservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

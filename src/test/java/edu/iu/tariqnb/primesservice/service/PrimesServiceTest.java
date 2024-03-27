@@ -2,6 +2,8 @@ package edu.iu.tariqnb.primesservice.service;
 
 import org.junit.jupiter.api.Test;
 
+import edu.iu.krishna1priya.primesservice.service.PrimesService;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class PrimesServiceTest {
